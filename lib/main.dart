@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 //? import 'text.dart';
+import 'image.dart';
+// import 'container.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Images());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.lightBlue,
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               color: Colors.redAccent,
