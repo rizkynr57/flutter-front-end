@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//? import 'text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,19 +15,34 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.tealAccent,
         appBar: AppBar(
+          leading: const Icon(Icons.home),
           title: const Text(
             'Welcome to Flutter',
           ),
-          backgroundColor: Colors.deepOrange,
+          backgroundColor: Colors.lightBlue,
         ),
-        body: const Center(
-          child: Text(
-            'Hello Rizky',
-            style: TextStyle(
-              fontSize: 32,
-              fontFamily: "serif",
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+              color: Colors.redAccent,
+              child: const FlutterLogo(
+                size: 120.0,
+              ),
             ),
-          ),
+            Container(
+              color: Colors.yellowAccent,
+              child: const FlutterLogo(
+                size: 120.0,
+              ),
+            ),
+            Container(
+              color: Colors.greenAccent,
+              child: const FlutterLogo(
+                size: 120.0,
+              ),
+            ),
+          ],
         ),
       ),
     );
