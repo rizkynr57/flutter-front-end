@@ -8,13 +8,13 @@ class Images extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.home),
+          leading: const Icon(Icons.home),
           title: const Text("Upload Images"),
         ),
         body: Image.asset(
           'assets/images/gambar.jpg',
           height: 500,
-          repeat: ImageRepeat.repeat,
+          repeat: ImageRepeat.noRepeat,
         ),
       ),
     );
