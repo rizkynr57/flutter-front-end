@@ -8,12 +8,12 @@ class MyHomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Belajar Flutter.com"),
+          title: const Text("Belajar Flutter.com"),
         ),
         body: Container(
             alignment: Alignment.center,
             color: Colors.purple,
-            child: Text(
+            child: const Text(
               "Ayo Belajar Flutter",
               style: TextStyle(
                 fontSize: 20,
