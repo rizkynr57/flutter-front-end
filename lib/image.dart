@@ -11,10 +11,28 @@ class Images extends StatelessWidget {
           leading: const Icon(Icons.home),
           title: const Text("Upload Images"),
         ),
-        body: Image.asset(
-          'assets/images/gambar.jpg',
-          height: 500,
-          repeat: ImageRepeat.noRepeat,
+        body: Container(
+          margin: EdgeInsets.all(125.0),
+          child: Column(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset(
+                  'assets/images/gambar.jpg',
+                ),
+              ),
+              Text(
+                "Pemandangan",
+                style:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                style:
+                    const TextStyle(fontSize: 15, fontStyle: FontStyle.italic),
+              ),
+            ],
+          ),
         ),
       ),
     );

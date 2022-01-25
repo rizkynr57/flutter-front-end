@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 //? import 'text.dart';
-import 'image.dart';
+//! import 'image.dart';
 //* import 'container.dart';
+import 'sample.dart';
 
 void main() {
-  runApp(const Images());
+  runApp(const SampleWidget());
 }
 
 class MyApp extends StatelessWidget {
