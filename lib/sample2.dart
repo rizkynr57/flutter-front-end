@@ -8,60 +8,37 @@ class RowWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Belajar Row'),
-          backgroundColor: Colors.purpleAccent,
+          leading: const Icon(Icons.add_to_home_screen_rounded),
+          title: const Text('Row & Column'),
+          backgroundColor: Colors.purple,
         ),
-        body: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.greenAccent,
-                  height: 100,
-                  width: 100,
+        body: Container(
+          child: Row(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.all(10),
+                color: Colors.cyanAccent,
+                child: FlutterLogo(
+                  size: 100.0,
                 ),
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.redAccent,
-                  height: 100,
-                  width: 100,
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                color: Colors.blueAccent,
+                child: FlutterLogo(
+                  size: 100.0,
                 ),
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.yellowAccent,
-                  height: 100,
-                  width: 100,
-                )
-              ],
-            ),
-            Row(
-              children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    Container(
-                      margin: const EdgeInsets.all(10),
-                      color: Colors.purpleAccent,
-                      height: 100,
-                      width: 100,
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(10),
-                      color: Colors.redAccent,
-                      height: 100,
-                      width: 100,
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(10),
-                      color: Colors.yellowAccent,
-                      height: 100,
-                      width: 100,
-                    )
-                  ],
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                color: Colors.redAccent,
+                child: FlutterLogo(
+                  size: 100.0,
                 ),
-              ],
-            )
-          ],
+              ),
+            ],
+          ),
         ),
       ),
     );
