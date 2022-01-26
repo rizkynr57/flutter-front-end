@@ -21,12 +21,12 @@ class Images extends StatelessWidget {
                   'assets/images/gambar.jpg',
                 ),
               ),
-              Text(
+              const Text(
                 "Pemandangan",
                 style:
                     const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 style:
                     const TextStyle(fontSize: 15, fontStyle: FontStyle.italic),

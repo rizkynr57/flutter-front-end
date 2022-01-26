@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 //? import 'text.dart';
 //! import 'image.dart';
 //* import 'container.dart';
-import 'sample.dart';
+import 'sample3.dart';
 
 void main() {
-  runApp(const SampleWidget());
+  runApp(const Row2Widget());
 }
 
 class MyApp extends StatelessWidget {
