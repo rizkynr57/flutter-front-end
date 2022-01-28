@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Latihan2 extends StatelessWidget {
-  const Latihan2({Key? key}) : super(key: key);
+class Latihan3 extends StatelessWidget {
+  const Latihan3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -80,6 +80,95 @@ class Latihan2 extends StatelessWidget {
                             color: Colors.white,
                             fontStyle: FontStyle.italic),
                       ),
+                      Text(
+                        "Ini adalah deskripsi gambar",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      Text(
+                        "Ini adalah deskripsi gambar",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 100.0,
+                      height: 100.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        gradient:
+                            LinearGradient(colors: [Colors.blue, Colors.red]),
+                      ),
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/gambar.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 10.0),
+                    ),
+                    Container(
+                      width: 100.0,
+                      height: 100.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        gradient:
+                            LinearGradient(colors: [Colors.blue, Colors.red]),
+                      ),
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/gambar.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+              ),
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  gradient: LinearGradient(colors: <Color>[
+                    Colors.blueGrey,
+                    Colors.blueAccent,
+                    Colors.blue
+                  ]),
+                ),
+                child: Container(
+                  child: Column(
+                    children: <Widget>[
                       Text(
                         "Ini adalah deskripsi gambar",
                         style: TextStyle(
