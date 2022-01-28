@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-
-//? import 'text.dart';
-//! import 'image.dart';
-//* import 'container.dart';
-import 'latihan2.dart';
+import 'package:flutter_application_1/latihan4.dart';
+import 'latihan4.dart';
 
 void main() {
-  runApp(const Latihan2());
+  runApp(const Latihan4());
 }
 
 class MyApp extends StatelessWidget {
