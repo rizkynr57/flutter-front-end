@@ -12,16 +12,7 @@ class Latihan4 extends StatelessWidget {
           title: Text(
             "Latihan ListView",
             style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                color: Colors.yellowAccent),
-          ),
-          flexibleSpace: Container(
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: <Color>[Colors.blueAccent, Colors.purpleAccent])),
+                fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
           ),
         ),
         body: Container(
@@ -55,22 +46,10 @@ class Latihan4 extends StatelessWidget {
                       width: 300.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        gradient: LinearGradient(
-                          colors: <Color>[
-                            Colors.yellowAccent,
-                            Colors.green,
-                          ],
-                        ),
-                      ),
-                      child: Container(
-                        height: 100.0,
-                        width: 100.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: DecorationImage(
-                              image: AssetImage('assets/images/gambar.jpg'),
-                              fit: BoxFit.cover),
-                        ),
+                        border: Border.all(color: Colors.black),
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/gambar.jpg'),
+                            fit: BoxFit.cover),
                       ),
                     ),
                     Padding(
