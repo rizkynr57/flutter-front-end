@@ -18,7 +18,7 @@ class Latihan4 extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: <Color>[Colors.white, Colors.lightBlue],
+              colors: <Color>[Colors.white, Colors.yellowAccent],
             ),
           ),
           child: ListView(
